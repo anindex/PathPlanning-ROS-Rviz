@@ -1,0 +1,15 @@
+<launch>
+  <param name="resolution" value="0.1"/>
+  <param name="map_width" value="100"/>
+  <param name="map_height" value="100"/>
+  <param name="sensor_range" value="7"/>
+  <param name="goalX" value="99"/>
+  <param name="goalY" value="49"/>
+  <node pkg="dlite_simulator" type="map_handler" name="map_handler"/>
+  <node pkg="dlite_simulator" type="sensor_data_helper" name="sensor_data_helper"/>
+  <node pkg="rviz" name="rviz" type="rviz" args="-d $(find dlite_simulator)/rviz/unknown_navigation.rviz"/>
+  <node pkg="dlite_simulator" type="robot.py" name="robot">
+    <param name="startX" value="0"/>
+    <param name="startY" value="49"/>
+  </node>
+</launch>
