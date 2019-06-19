@@ -3,4 +3,4 @@ The repo simulates D* Lite path planning algorithm on ROS environment. The simul
 
 ## Demo
 
-
+[![IMAGE ALT TEXT HERE](http://i3.ytimg.com/vi/DnCvpCYjjps/hqdefault.jpg)](https://www.youtube.com/watch?v=DnCvpCYjjps)
